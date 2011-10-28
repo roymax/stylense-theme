@@ -38,7 +38,7 @@
 				'titleShow'			: false
 			});
 			
-			$("a[href$=.jpg],a[href$=.png],a[href$=.gif]").fancybox();
+			$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").fancybox();
 			
 		});
 	</script>	
@@ -412,7 +412,7 @@ $(function() {
 		font-size: 13px;
 		line-height: 18px;
 		text-shadow: 0 1px 1px rgba(255,255,255,0.9);
-		background: url(images/gradbg.png) repeat-x #dadddd;
+		background: url(http://static.tumblr.com/z7lhmdl/DsSkwsstm/gradbg.png) repeat-x #dadddd;
 		padding-left: 20px;
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -700,7 +700,14 @@ $(function() {
 			</div>
 			
 		</div>
-	
+{block:IndexPage}		
+		<div class="shadow">
+								<div class="lightpanel roundedbottom roundedtop ">
+									<p><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fstylense.com&amp;layout=standard&amp;show_faces=true&amp;width=300&amp;action=like&amp;font&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
+										</p>
+										</div>
+		</div>
+{/block:IndexPage}		
 		<div class="shadow">
 		
 {block:If300pxPortraitImage}
@@ -945,7 +952,6 @@ $(function() {
 				{block:IfDisqusUsername}
 				<li><a class="dsq-comment-count" href="{Permalink}#disqus_thread">{lang:Comment}</a></li>
 				{/block:IfDisqusUsername}
-				
 			</ul>
 			
 		{block:HighRes}
@@ -1396,8 +1402,16 @@ $(function() {
 
 		
 {block:PermalinkPage} 
+	<div class="shadow">
+						<div class="lightpanel roundedbottom roundedtop ">
+							
+							<p><iframe src="http://www.facebook.com/plugins/like.php?href={URLEncodedPermalink}&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;font&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
+								</p>
+								</div>
+</div>
+					
 {block:IfDisqusUsername}
-
+				
 	<div class="shadow">
 		<div class="lightpanel roundedbottom roundedtop comments">
 
