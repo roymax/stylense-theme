@@ -9,7 +9,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}{block:PostSummary} - {PostSummary}{/block:PostSummary}</title>
 	
 	<link rel="shortcut icon" href="{Favicon}" />
@@ -1410,7 +1410,7 @@ $(function() {
 							
 							<p><iframe src="http://www.facebook.com/plugins/like.php?href={URLEncodedPermalink}&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;font&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
 								</p>
-								<p><g:plusone href="{URLEncodedPermalink}"></g:plusone>
+								<p><g:plusone href="{Permalink}"></g:plusone>
 									</p>
 								</div>
 </div>
